@@ -5,13 +5,16 @@ window.onload = function () {
     //var bb = "sdd" + tt;
     //alert(bb);
     var txtName = document.getElementById("txtName");
-    var paragrafInfo = document.getElementById("paragrafInfo");
+    var modalFullName = document.getElementById("modalFullName");
     var btnOk = document.getElementById("btnOk");
-    btnOk.onclick = function () {
+    btnOk.onclick = function (e) {
         //console.log(tt);
         //console.log(txtName.value);
-        paragrafInfo.innerHTML = "Вітаємо вас: <b>"+ txtName.value+"</b>";
+        modalFullName.innerHTML = txtName.value;
         $("#myModal").modal("show");
+        e.preventDefault(); //Заборонити стандартну поведінку
+        
     };
+    
 
 }
