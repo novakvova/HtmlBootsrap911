@@ -39,3 +39,7 @@ img {
 .margin-top-carousel {
     margin-top: 10px;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
